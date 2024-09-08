@@ -4,61 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hindi Counting Tool</title>
-    <link rel="stylesheet" href="dist/style.css">
+    <title>Hindi Number Tutor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 
-<body class="bg-gray-100 min-h-screen flex flex-col">
+<body class="bg-pink-100 min-h-screen flex flex-col">
     <!-- Navigation -->
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav class="bg-yellow-400 fixed w-full z-20 top-0 start-0 border-b border-yellow-300">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <div class="flex items-center space-x-3 rtl:space-x-reverse">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Hindi Counting Tool</span>
+            <div class="flex items-center space-x-3">
+                <span class="self-center text-2xl font-semibold text-navy-900">Hindi Number Tutor</span>
             </div>
-            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <button id="mobile-menu-button" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
-            </div>
-            <div id="navbar-sticky" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <div id="navbar-sticky" class="items-center hidden w-full md:flex md:w-auto">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium bg-yellow-50 md:space-x-8 md:flex-row md:mt-0 md:bg-yellow-400">
                     <li>
-                        <button class="nav-btn block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" data-target="counter-page">Counter</button>
+                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500" data-target="counter-page">Counter</button>
                     </li>
                     <li>
-                        <button class="nav-btn block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" data-target="shuffle-page">Shuffle Mode</button>
+                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500" data-target="shuffle-page">Shuffle Mode</button>
                     </li>
                     <li>
-                        <button class="nav-btn block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" data-target="chart-page">Chart Bar</button>
+                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500" data-target="chart-page">Chart Bar</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Chart Page -->
-    <section id="chart-page" class="page hidden flex flex-col items-center justify-center min-h-screen">
-        <div class="bg-white p-6 rounded shadow-lg w-full max-w-lg">
-            <h2 class="text-2xl mb-4 font-bold text-center">Chart Bar</h2>
-            <div id="chart-content" class="grid grid-cols-1 gap-2 w-full">
-                <!-- Chart content will be dynamically filled by the chart.js script -->
-            </div>
-        </div>
-    </section>
-
     <!-- Counter Page -->
-    <section id="counter-page" class="page hidden flex flex-col items-center justify-center min-h-screen">
-        <div class="bg-white p-6 rounded shadow-lg w-full max-w-lg">
-            <h2 class="text-2xl mb-4 font-bold text-center">Counter with Pronunciation</h2>
-            <div id="counter-content"></div>
-            <div class="mt-4 w-full">
-                <input type="number" id="custom-number" class="w-full border border-gray-300 p-2 rounded-md"
-                    placeholder="Enter a number (1-100000)">
-                <button id="play-pronunciation"
-                    class="mt-2 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Play Pronunciation</button>
+    <section id="counter-page" class="page flex flex-col items-center justify-center min-h-screen">
+        <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-16">
+            <h2 class="text-2xl font-semibold text-center text-navy-900 mb-6">Hindi Number Tutor</h2>
+
+            <!-- Toggle Buttons for sections -->
+            <div class="flex justify-center mb-4">
+                <button id="counter-tab" class="px-4 py-2 mr-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Counter</button>
+                <button id="manual-tab" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">Pronunciation</button>
+            </div>
+
+            <!-- Card with Two Sections -->
+            <div class="grid grid-cols-1">
+
+                <!-- Left Section: Counter -->
+                <div id="counter-section" class="p-4 border rounded-lg shadow-md bg-pink-50 hidden">
+                    <h3 class="text-lg text-center font-semibold text-navy-900 mb-4">Counter</h3>
+                    <select id="language-select-counter" class="w-full mb-2 p-2 border border-pink-200 rounded-md">
+                        <option value="hi-IN">Hindi</option>
+                        <option value="en-US">English</option>
+                    </select>
+                    <input type="number" id="custom-number" class="w-full border border-pink-200 p-2 rounded-md mb-2" placeholder="Enter a number (1-100000)">
+                    <button id="play-pronunciation" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                        Play Pronunciation
+                    </button>
+                    <div id="number-words" class="text-gray-700 mt-2"></div>
+                </div>
+
+                <!-- Right Section: Manual Pronunciation -->
+                <div id="manual-section" class="p-4 border rounded-lg shadow-md bg-pink-50 hidden">
+                    <h3 class="text-lg text-center font-semibold text-navy-900 mb-4">Pronunciation</h3>
+                    <select id="language-select-manual" class="w-full mb-2 p-2 border border-pink-200 rounded-md">
+                        <option value="hi-IN">Hindi</option>
+                        <option value="en-US">English</option>
+                    </select>
+                    <button id="pronounce-manually" class="w-full bg-red-500 text-white p-2 rounded hover:bg-red-600 mb-2">
+                        Pronounce
+                    </button>
+                    <div id="recognized-text" class="text-gray-700 text-center mt-2">Recognized Number :</div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -66,9 +79,21 @@
     <!-- Shuffle Mode Page -->
     <section id="shuffle-page" class="page hidden flex flex-col items-center justify-center min-h-screen">
         <div class="bg-white p-6 rounded shadow-lg w-full max-w-lg">
-            <h2 class="text-2xl mb-4 font-bold text-center">Shuffle Mode</h2>
+            <h2 class="text-2xl mb-4 font-bold text-center text-navy-900">Shuffle Mode</h2>
             <div id="quiz-content" class="w-full text-center"></div>
-            <button id="next-question" class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Next Question</button>
+            <button id="next-question" class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                Next Question
+            </button>
+        </div>
+    </section>
+
+    <!-- Chart Page -->
+    <section id="chart-page" class="page hidden flex flex-col items-center justify-center min-h-screen">
+        <div class="bg-white p-6 rounded shadow-lg w-full max-w-lg">
+            <h2 class="text-2xl mb-4 font-bold text-center text-navy-900">Chart Bar</h2>
+            <div id="chart-content" class="grid grid-cols-1 gap-2 w-full">
+                <!-- Chart content will be dynamically filled by the chart.js script -->
+            </div>
         </div>
     </section>
 
@@ -77,4 +102,5 @@
     <script src="js/shuffle.js"></script>
     <script src="js/chart.js"></script>
 </body>
+
 </html>

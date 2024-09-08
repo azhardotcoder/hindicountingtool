@@ -1,13 +1,15 @@
 // main.js
-
 document.addEventListener('DOMContentLoaded', () => {
     // Function to handle page navigation
-    document.querySelectorAll('.nav-btn').forEach(button => {
+    const pages = document.querySelectorAll('.page');
+    const navButtons = document.querySelectorAll('.nav-btn');
+
+    navButtons.forEach(button => {
         button.addEventListener('click', () => {
             const targetPage = button.getAttribute('data-target');
       
             // Hide all pages
-            document.querySelectorAll('.page').forEach(page => {
+            pages.forEach(page => {
                 page.classList.add('hidden');
             });
       
@@ -15,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById(targetPage).classList.remove('hidden');
         });
     });
-  
+
     // Initially show the Counter page (default)
     document.getElementById('counter-page').classList.remove('hidden');
 
