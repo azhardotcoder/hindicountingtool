@@ -1,0 +1,497 @@
+{
+    "1": {
+        "hindi": "एक",
+        "romanized": "ek",
+        "english": "one"
+    },
+    "2": {
+        "hindi": "दो",
+        "romanized": "do",
+        "english": "two"
+    },
+    "3": {
+        "hindi": "तीन",
+        "romanized": "teen",
+        "english": "three"
+    },
+    "4": {
+        "hindi": "चार",
+        "romanized": "chaar",
+        "english": "four"
+    },
+    "5": {
+        "hindi": "पाँच",
+        "romanized": "paanch",
+        "english": "five"
+    },
+    "6": {
+        "hindi": "छह",
+        "romanized": "chheh",
+        "english": "six"
+    },
+    "7": {
+        "hindi": "सात",
+        "romanized": "saat",
+        "english": "seven"
+    },
+    "8": {
+        "hindi": "आठ",
+        "romanized": "aath",
+        "english": "eight"
+    },
+    "9": {
+        "hindi": "नौ",
+        "romanized": "nau",
+        "english": "nine"
+    },
+    "10": {
+        "hindi": "दस",
+        "romanized": "das",
+        "english": "ten"
+    },
+    "11": {
+        "hindi": "ग्यारह",
+        "romanized": "gyarah",
+        "english": "eleven"
+    },
+    "12": {
+        "hindi": "बारह",
+        "romanized": "baarah",
+        "english": "twelve"
+    },
+    "13": {
+        "hindi": "तेरह",
+        "romanized": "terah",
+        "english": "thirteen"
+    },
+    "14": {
+        "hindi": "चौदह",
+        "romanized": "chaudah",
+        "english": "fourteen"
+    },
+    "15": {
+        "hindi": "पंद्रह",
+        "romanized": "pandrah",
+        "english": "fifteen"
+    },
+    "16": {
+        "hindi": "सोलह",
+        "romanized": "solah",
+        "english": "sixteen"
+    },
+    "17": {
+        "hindi": "सत्रह",
+        "romanized": "satrah",
+        "english": "seventeen"
+    },
+    "18": {
+        "hindi": "अठारह",
+        "romanized": "atharah",
+        "english": "eighteen"
+    },
+    "19": {
+        "hindi": "उन्नीस",
+        "romanized": "unnis",
+        "english": "nineteen"
+    },
+    "20": {
+        "hindi": "बीस",
+        "romanized": "bees",
+        "english": "twenty"
+    },
+    "21": {
+        "hindi": "इक्कीस",
+        "romanized": "ikkees",
+        "english": "twenty-one"
+    },
+    "22": {
+        "hindi": "बाईस",
+        "romanized": "baees",
+        "english": "twenty-two"
+    },
+    "23": {
+        "hindi": "तेईस",
+        "romanized": "teees",
+        "english": "twenty-three"
+    },
+    "24": {
+        "hindi": "चौबीस",
+        "romanized": "chaubees",
+        "english": "twenty-four"
+    },
+    "25": {
+        "hindi": "पच्चीस",
+        "romanized": "pachchees",
+        "english": "twenty-five"
+    },
+    "26": {
+        "hindi": "छब्बीस",
+        "romanized": "chhabbees",
+        "english": "twenty-six"
+    },
+    "27": {
+        "hindi": "सत्ताईस",
+        "romanized": "sattaees",
+        "english": "twenty-seven"
+    },
+    "28": {
+        "hindi": "अट्ठाईस",
+        "romanized": "athhaees",
+        "english": "twenty-eight"
+    },
+    "29": {
+        "hindi": "उनतीस",
+        "romanized": "untees",
+        "english": "twenty-nine"
+    },
+    "30": {
+        "hindi": "तीस",
+        "romanized": "tees",
+        "english": "thirty"
+    },
+    "31": {
+        "hindi": "इकतीस",
+        "romanized": "iktees",
+        "english": "thirty-one"
+    },
+    "32": {
+        "hindi": "बत्तीस",
+        "romanized": "batttees",
+        "english": "thirty-two"
+    },
+    "33": {
+        "hindi": "तैंतीस",
+        "romanized": "taintees",
+        "english": "thirty-three"
+    },
+    "34": {
+        "hindi": "चौंतीस",
+        "romanized": "chauntees",
+        "english": "thirty-four"
+    },
+    "35": {
+        "hindi": "पैंतीस",
+        "romanized": "paintees",
+        "english": "thirty-five"
+    },
+    "36": {
+        "hindi": "छैंतीस",
+        "romanized": "chhaintees",
+        "english": "thirty-six"
+    },
+    "37": {
+        "hindi": "सैंतीस",
+        "romanized": "saintees",
+        "english": "thirty-seven"
+    },
+    "38": {
+        "hindi": "अड़तीस",
+        "romanized": "adaintees",
+        "english": "thirty-eight"
+    },
+    "39": {
+        "hindi": "उनतालीस",
+        "romanized": "untees",
+        "english": "thirty-nine"
+    },
+    "40": {
+        "hindi": "चालीस",
+        "romanized": "chaalees",
+        "english": "forty"
+    },
+    "41": {
+        "hindi": "इकतालीस",
+        "romanized": "iktaalees",
+        "english": "forty-one"
+    },
+    "42": {
+        "hindi": "बयालीस",
+        "romanized": "bayaalees",
+        "english": "forty-two"
+    },
+    "43": {
+        "hindi": "तैतालीस",
+        "romanized": "taitaalees",
+        "english": "forty-three"
+    },
+    "44": {
+        "hindi": "चौंतालीस",
+        "romanized": "chauntaalees",
+        "english": "forty-four"
+    },
+    "45": {
+        "hindi": "पैंतालीस",
+        "romanized": "pintaalees",
+        "english": "forty-five"
+    },
+    "46": {
+        "hindi": "छियालीस",
+        "romanized": "chhiyataalees",
+        "english": "forty-six"
+    },
+    "47": {
+        "hindi": "सैंतालीस",
+        "romanized": "saitaalees",
+        "english": "forty-seven"
+    },
+    "48": {
+        "hindi": "अड़तालीस",
+        "romanized": "adhantaalees",
+        "english": "forty-eight"
+    },
+    "49": {
+        "hindi": "उनचास",
+        "romanized": "untaalees",
+        "english": "forty-nine"
+    },
+    "50": {
+        "hindi": "पचास",
+        "romanized": "pachaas",
+        "english": "fifty"
+    },
+    "52": {
+        "hindi": "बावन",
+        "romanized": "bawan",
+        "english": "fifty-two"
+    },
+    "53": {
+        "hindi": "तिरेपन",
+        "romanized": "tirpan",
+        "english": "fifty-three"
+    },
+    "54": {
+        "hindi": "चौवन",
+        "romanized": "chauvan",
+        "english": "fifty-four"
+    },
+    "55": {
+        "hindi": "पचपन",
+        "romanized": "pachpan",
+        "english": "fifty-five"
+    },
+    "56": {
+        "hindi": "छप्पन",
+        "romanized": "chhappan",
+        "english": "fifty-six"
+    },
+    "57": {
+        "hindi": "सत्तावन",
+        "romanized": "sattawan",
+        "english": "fifty-seven"
+    },
+    "58": {
+        "hindi": "अट्ठावन",
+        "romanized": "aththawan",
+        "english": "fifty-eight"
+    },
+    "59": {
+        "hindi": "उनसठ",
+        "romanized": "unsath",
+        "english": "fifty-nine"
+    },
+    "60": {
+        "hindi": "साठ",
+        "romanized": "saath",
+        "english": "sixty"
+    },
+    "61": {
+        "hindi": "इकसठ",
+        "romanized": "iksaath",
+        "english": "sixty-one"
+    },
+    "62": {
+        "hindi": "बासठ",
+        "romanized": "basaath",
+        "english": "sixty-two"
+    },
+    "63": {
+        "hindi": "तिरसठ",
+        "romanized": "tirasath",
+        "english": "sixty-three"
+    },
+    "64": {
+        "hindi": "चौंसठ",
+        "romanized": "chausath",
+        "english": "sixty-four"
+    },
+    "65": {
+        "hindi": "पैंसठ",
+        "romanized": "painsath",
+        "english": "sixty-five"
+    },
+    "66": {
+        "hindi": "छियासठ",
+        "romanized": "chhiyasath",
+        "english": "sixty-six"
+    },
+    "67": {
+        "hindi": "सड़सठ",
+        "romanized": "sadsath",
+        "english": "sixty-seven"
+    },
+    "68": {
+        "hindi": "अड़सठ",
+        "romanized": "adhsath",
+        "english": "sixty-eight"
+    },
+    "69": {
+        "hindi": "उनहत्तर",
+        "romanized": "unhattar",
+        "english": "sixty-nine"
+    },
+    "70": {
+        "hindi": "सत्तर",
+        "romanized": "sattar",
+        "english": "seventy"
+    },
+    "71": {
+        "hindi": "इकहत्तर",
+        "romanized": "ikhattar",
+        "english": "seventy-one"
+    },
+    "72": {
+        "hindi": "बहत्तर",
+        "romanized": "bahattar",
+        "english": "seventy-two"
+    },
+    "73": {
+        "hindi": "तिहत्तर",
+        "romanized": "tihattar",
+        "english": "seventy-three"
+    },
+    "74": {
+        "hindi": "चौहत्तर",
+        "romanized": "chauhattar",
+        "english": "seventy-four"
+    },
+    "75": {
+        "hindi": "पचहत्तर",
+        "romanized": "pachhattar",
+        "english": "seventy-five"
+    },
+    "76": {
+        "hindi": "छिहत्तर",
+        "romanized": "chhiyahattar",
+        "english": "seventy-six"
+    },
+    "77": {
+        "hindi": "सतहत्तर",
+        "romanized": "satthattar",
+        "english": "seventy-seven"
+    },
+    "78": {
+        "hindi": "अठहत्तर",
+        "romanized": "athhattar",
+        "english": "seventy-eight"
+    },
+    "79": {
+        "hindi": "उनासी",
+        "romanized": "unaasi",
+        "english": "seventy-nine"
+    },
+    "80": {
+        "hindi": "अस्सी",
+        "romanized": "assi",
+        "english": "eighty"
+    },
+    "81": {
+        "hindi": "इक्यासी",
+        "romanized": "ikyaasi",
+        "english": "eighty-one"
+    },
+    "82": {
+        "hindi": "बयासी",
+        "romanized": "bayaasi",
+        "english": "eighty-two"
+    },
+    "83": {
+        "hindi": "तिरासी",
+        "romanized": "tiryaasi",
+        "english": "eighty-three"
+    },
+    "84": {
+        "hindi": "चौरासी",
+        "romanized": "chouraasi",
+        "english": "eighty-four"
+    },
+    "85": {
+        "hindi": "पचासी",
+        "romanized": "pachaasi",
+        "english": "eighty-five"
+    },
+    "86": {
+        "hindi": "छियासी",
+        "romanized": "chhiyaasi",
+        "english": "eighty-six"
+    },
+    "87": {
+        "hindi": "सतासी",
+        "romanized": "sataasi",
+        "english": "eighty-seven"
+    },
+    "88": {
+        "hindi": "अठासी",
+        "romanized": "athaasi",
+        "english": "eighty-eight"
+    },
+    "89": {
+        "hindi": "नवासी",
+        "romanized": "navaasi",
+        "english": "eighty-nine"
+    },
+    "90": {
+        "hindi": "नब्बे",
+        "romanized": "nabbe",
+        "english": "ninety"
+    },
+    "91": {
+        "hindi": "इक्यानवे",
+        "romanized": "ikyaanve",
+        "english": "ninety-one"
+    },
+    "92": {
+        "hindi": "बयानवे",
+        "romanized": "bayaanve",
+        "english": "ninety-two"
+    },
+    "93": {
+        "hindi": "तिरानवे",
+        "romanized": "tiryaanve",
+        "english": "ninety-three"
+    },
+    "94": {
+        "hindi": "चौरानवे",
+        "romanized": "chauraanve",
+        "english": "ninety-four"
+    },
+    "95": {
+        "hindi": "पंचानवे",
+        "romanized": "pachaanve",
+        "english": "ninety-five"
+    },
+    "96": {
+        "hindi": "छियानवे",
+        "romanized": "chhiyaanve",
+        "english": "ninety-six"
+    },
+    "97": {
+        "hindi": "सत्तानवे",
+        "romanized": "sattaanve",
+        "english": "ninety-seven"
+    },
+    "98": {
+        "hindi": "अठानवे",
+        "romanized": "athaanve",
+        "english": "ninety-eight"
+    },
+    "99": {
+        "hindi": "निन्यानवे",
+        "romanized": "ninyaanve",
+        "english": "ninety-nine"
+    },
+    "100": {
+        "hindi": "सौ",
+        "romanized": "sau",
+        "english": "one hundred"
+    }
+}
