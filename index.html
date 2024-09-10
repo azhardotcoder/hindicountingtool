@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hindi Number Tutor</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 </head>
 
 <body class="bg-pink-100 min-h-screen flex flex-col">
@@ -15,21 +17,34 @@
             <div class="flex items-center space-x-3">
                 <span class="self-center text-2xl font-semibold text-navy-900">Hindi Number Tutor</span>
             </div>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-navy-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
             <div id="navbar-sticky" class="items-center hidden w-full md:flex md:w-auto">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium bg-yellow-50 md:space-x-8 md:flex-row md:mt-0 md:bg-yellow-400">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium bg-yellow-50 md:space-x-8 md:flex-row md:mt-0 md:bg-yellow-400">
                     <li>
-                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500" data-target="counter-page">Counter</button>
+                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500"
+                            data-target="counter-page">Counter</button>
                     </li>
                     <li>
-                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500" data-target="shuffle-page">Shuffle Mode</button>
+                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500"
+                            data-target="shuffle-page">Shuffle Mode</button>
                     </li>
                     <li>
-                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500" data-target="chart-page">Chart Bar</button>
+                        <button class="nav-btn block py-2 px-3 text-navy-900 rounded hover:bg-yellow-500"
+                            data-target="chart-page">Chart Bar</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- Counter Page -->
     <section id="counter-page" class="page flex flex-col items-center justify-center min-h-screen">
@@ -38,8 +53,10 @@
 
             <!-- Toggle Buttons for sections -->
             <div class="flex justify-center mb-4">
-                <button id="counter-tab" class="px-4 py-2 mr-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Counter</button>
-                <button id="manual-tab" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">Pronunciation</button>
+                <button id="counter-tab"
+                    class="px-4 py-2 mr-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Counter</button>
+                <button id="manual-tab"
+                    class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">Pronunciation</button>
             </div>
 
             <!-- Card with Two Sections -->
@@ -52,7 +69,8 @@
                         <option value="hi-IN">Hindi</option>
                         <option value="en-US">English</option>
                     </select>
-                    <input type="number" id="custom-number" class="w-full border border-pink-200 p-2 rounded-md mb-2" placeholder="Enter a number (1-100000)">
+                    <input type="number" id="custom-number" class="w-full border border-pink-200 p-2 rounded-md mb-2"
+                        placeholder="Enter a number (1-100000)">
                     <button id="play-pronunciation" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
                         Play Pronunciation
                     </button>
@@ -66,7 +84,8 @@
                         <option value="hi-IN">Hindi</option>
                         <option value="en-US">English</option>
                     </select>
-                    <button id="pronounce-manually" class="w-full bg-red-500 text-white p-2 rounded hover:bg-red-600 mb-2">
+                    <button id="pronounce-manually"
+                        class="w-full bg-red-500 text-white p-2 rounded hover:bg-red-600 mb-2">
                         Pronounce
                     </button>
                     <div id="recognized-text" class="text-gray-700 text-center mt-2">Recognized Number :</div>
@@ -76,16 +95,72 @@
         </div>
     </section>
 
-    <!-- Shuffle Mode Page -->
     <section id="shuffle-page" class="page hidden flex flex-col items-center justify-center min-h-screen">
         <div class="bg-white p-6 rounded shadow-lg w-full max-w-lg">
             <h2 class="text-2xl mb-4 font-bold text-center text-navy-900">Shuffle Mode</h2>
-            <div id="quiz-content" class="w-full text-center"></div>
-            <button id="next-question" class="mt-4 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+
+            <!-- Difficulty Level Selection -->
+            <label for="difficulty-level" class="block text-lg font-semibold text-center mb-2 hidden">Select
+                Difficulty:</label>
+            <select id="difficulty-level" class="w-full p-2 mb-4 bg-gray-100 border border-gray-300 rounded-lg">
+                <option value=""  disabled selected>Select difficulty</option>
+                <option value="easy">Easy (20s per question)</option>
+                <option value="medium">Medium (15s per question)</option>
+                <option value="hard">Hard (10s per question)</option>
+            </select>
+
+            <!-- Timer display (hidden initially) -->
+            <p id="timer" class="mb-4 text-lg font-semibold text-center text-red-500 hidden">15s</p>
+
+            <!-- Progress bar container (hidden initially) -->
+            <div id="progress-bar-container" class="relative pt-1 w-full mb-4 hidden">
+                <div class="overflow-hidden h-2 text-xs flex rounded bg-blue-200">
+                    <div id="progress-bar"
+                        class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"
+                        style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <!-- Quiz content (hidden initially) -->
+            <div id="quiz-content" class="w-full text-center hidden"></div>
+
+            <!-- Feedback for correct/incorrect answer (hidden initially) -->
+            <div id="feedback" class="text-lg font-semibold text-center hidden"></div>
+
+            <!-- Button to pronounce the current number (hidden initially) -->
+            <button id="pronounce-number"
+                class="mt-4 w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out hidden">
+                Hear Pronunciation
+            </button>
+
+            <!-- Button to go to the next question (hidden initially) -->
+            <button id="next-question"
+                class="mt-4 w-full bg-green-500 text-white p-2 rounded-lg hover:bg-green-600 transition duration-300 ease-in-out hidden">
                 Next Question
             </button>
+
+            <!-- Button to use a hint (hidden initially) -->
+            <button id="hint-button"
+                class="mt-4 w-full bg-yellow-500 text-white p-2 rounded-lg hover:bg-yellow-600 transition duration-300 ease-in-out hidden">
+                Use a Hint
+            </button>
+
+            <!-- Button to start the quiz -->
+            <button id="start-quiz"
+                class="mt-4 w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">
+                Start Quiz
+            </button>
         </div>
+
+        <!-- Audio for correct/incorrect answer sound effects -->
+        <audio id="correct-sound" src="sounds/correct.mp3" preload="auto"></audio>
+        <audio id="wrong-sound" src="sounds/wrong.mp3" preload="auto"></audio>
     </section>
+
+
+
+
+
 
     <!-- Chart Page -->
     <section id="chart-page" class="page hidden flex flex-col items-center justify-center min-h-screen">
